@@ -1,0 +1,7 @@
+app table:
+create table app (id int NOT NULL AUTO_INCREMENT, name varchar(20) NOT NULL,email varchar(40) NOT NULL, gender varchar(1) NOT NULL, dname varchar(20) NOT NULL, comm varchar(100) NOT NULL,PRIMARY KEY (id))
+doc table:
+create table doc (id int NOT NULL AUTO_INCREMENT, name varchar(20) NOT NULL,email varchar(40) NOT NULL, gender varchar(1) NOT NULL, dname varchar(20) NOT NULL, PRIMARY KEY (id))
+Users Table:
+
+create table users(username varchar(20) NOT NULL,password varchar(20) NOT NULL,PRIMARY KEY(username));

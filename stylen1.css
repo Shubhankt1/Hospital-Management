@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+section{
+  width: 100%;
+  min-height: 600px;
+}
+.wave h1{
+  margin: 0;
+  padding-top: 3%;
+  text-align: center;
+  font-family: 'ar bonnie';
+  font-size: 80px;
+}
+.wave{
+  position: relative;
+  background: linear-gradient(240deg, #1366ff, #ff0b6d);
+}
+.wave:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: url(wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 6px;
+  font-size: 24px;
+  transition: .5s;
+  color: #fff;
+  background: #000;
+  border-radius: 60px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,.5);
+  overflow: hidden;
+}
+.app:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #1366ff, #ff0b6d);
+  z-index: -1;
+  border-radius: 60px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+}
+.app:hover:before{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.lout{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transform: none;
+}
+.lout a{
+  width: 100%;
+  font-family: 'ar bonnie';
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+}
+.lout a:before{
+  content: '';
+  width: 0px;
+  height: 3px;
+  background: #ff0b6d;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transition: .5s;
+}
+.lout a:hover:before{
+  width: 50%;
+  transform: translateX(100%);
+}
+#main{
+  top: 8%;
+}
