@@ -44,20 +44,20 @@
           <h1>Doctor Details</h1>
           <form id="myform" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="inputbox">
-              <input type="text" name="name" value="<?php echo $name;?>" placeholder="Full Name">
               <span><i class="fa fa-user" aria-hidden="true"></i></span>
+              <input type="text" name="name" value="<?php echo $name;?>" placeholder="Full Name">
             </div>
             <div class="inputbox">
-              <input type="text" name="email" value="<?php echo $email;?>" placeholder="Email">
               <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <input type="text" name="email" value="<?php echo $email;?>" placeholder="Email">
             </div>
             <div class="inputbox">
-              <input type="text" name="gender" value="<?php echo $gender;?>" placeholder="Gender">
               <span><i class="fas fa-male"></i><i class="fas fa-female"></i></span>
+              <input type="text" name="gender" value="<?php echo $gender;?>" placeholder="Gender">
             </div>
             <div class="inputbox">
-              <input type="text" name="dname" value="<?php echo $dname;?>" placeholder="Department">
               <span><i class="fas fa-code-branch"></i></i></span>
+              <input type="text" name="dname" value="<?php echo $dname;?>" placeholder="Department">
             </div>
             <input type="submit" name="" value="Submit">
           </form>
