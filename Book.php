@@ -41,18 +41,19 @@ $retval = mysqli_query($con, $sql) or die(mysqli_error($con));
           <h1>Appointment Form</h1>
           <form id="myform" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="inputbox">
-              <input type="text" name="name" value="<?php echo $name;?>" placeholder="Full Name">
               <span><i class="fa fa-user" aria-hidden="true"></i></span>
+              <input type="text" name="name" value="<?php echo $name;?>" placeholder="Full Name">
             </div>
             <div class="inputbox">
-              <input type="text" name="email" value="<?php echo $email;?>" placeholder="Email">
               <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <input type="text" name="email" value="<?php echo $email;?>" placeholder="Email">
             </div>
             <div class="inputbox">
-              <input type="text" name="gender" value="<?php echo $gender;?>" placeholder="Gender">
               <span><i class="fas fa-male"></i><i class="fas fa-female"></i></span>
+              <input type="text" name="gender" value="<?php echo $gender;?>" placeholder="Gender">
             </div>
             <div class="inputbox">
+              <span><i class="fas fa-user-md"></i></span>
               <select class="sel" name="doctor">
                 <option value="" disabled selected>Select Doctor</option>
                 <?php
@@ -62,12 +63,11 @@ $retval = mysqli_query($con, $sql) or die(mysqli_error($con));
                   mysqli_close($con);
                 ?>
               </select>
-              <span><i class="fas fa-user-md"></i></span>
             </div>
             <div class="inputbox">
+              <span id="cm"><i class="fa fa-comments" aria-hidden="true"></i></span>
               <textarea name="comm" rows="8" cols="72" placeholder="Comments"></textarea>
               <!--<input type="text" name="" value="" placeholder="Email">-->
-              <span id="cm"><i class="fa fa-comments" aria-hidden="true"></i></span>
             </div>
             <input type="submit" name="" value="Submit">
           </form>
