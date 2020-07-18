@@ -1,3 +1,7 @@
+@font-face {
+  font-family: arBonnie;
+  src: url(ARBONNIE.ttf);
+}
 body{
   margin: 0;
   padding: 0;
@@ -30,7 +34,7 @@ body{
   text-align: center;
   margin-bottom: 30px;
   font-size: 80px;
-  font-family: 'ar bonnie';
+  font-family: 'arBonnie';
 }
 .app{
   position: absolute;
@@ -88,7 +92,7 @@ body{
 }
 .lout a{
   width: 100%;
-  font-family: 'ar bonnie';
+  font-family: 'arBonnie';
   font-size: 40px;
   text-decoration: none;
   color: #000;
